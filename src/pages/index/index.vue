@@ -1,3 +1,11 @@
+<!--
+ * @Author: zhangdi 1258956799@qq.com
+ * @Date: 2022-11-19 21:14:54
+ * @LastEditors: zhangdi 1258956799@qq.com
+ * @LastEditTime: 2022-11-19 21:46:49
+ * @FilePath: /demo/src/pages/index/index.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
@@ -32,9 +40,9 @@
 	}
 
 	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
+		height: 100px;
+		width: 100px;
+		margin: 100px auto 25px auto;
 	}
 
 	.text-area {
@@ -43,7 +51,7 @@
 	}
 
 	.title {
-		font-size: 36rpx;
+		font-size: 18px;
 		color: #8f8f94;
 	}
 </style>

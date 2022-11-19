@@ -45,7 +45,11 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "addPage": "node ./auto/addPage.js",
+    "lint-staged": "lint-staged --allow-empty",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.1-alpha-36920221118002",
@@ -70,7 +74,15 @@
     "@dcloudio/uni-stat": "^2.0.1-alpha-36920221118002",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "flyio": "^0.6.2",
+    "husky": "^8.0.2",
+    "i": "^0.3.7",
+    "lint-staged": "^13.0.3",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^2.7.1",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
     "vuex": "^3.2.0"
@@ -96,7 +108,8 @@
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "husky": "^8.0.0"
   },
   "browserslist": [
     "Android >= 4.4",
@@ -104,6 +117,12 @@
   ],
   "resolutions": {
     "@babel/runtime": "~7.17.9"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
   "uni-app": {
     "scripts": {}
