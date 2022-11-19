@@ -49,7 +49,8 @@
     "addPage": "node ./auto/addPage.js",
     "lint-staged": "lint-staged --allow-empty",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cz": "git add . && cz"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.1-alpha-36920221118002",
@@ -83,6 +84,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "~7.17.9",
+    "@commitlint/config-conventional": "^17.2.0",
     "@dcloudio/types": "^3.0.4",
     "@dcloudio/uni-automator": "^2.0.1-alpha-36920221118002",
     "@dcloudio/uni-cli-i18n": "^2.0.1-alpha-36920221118002",
@@ -98,7 +100,10 @@
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "babel-plugin-import": "^1.11.0",
+    "commitizen": "^4.2.5",
+    "commitlint": "^17.2.0",
     "cross-env": "^7.0.2",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -110,6 +115,7 @@
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "prettier": "^2.7.1",
+    "stylelint": "^14.15.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
