@@ -74,15 +74,9 @@
     "@dcloudio/uni-stat": "^2.0.1-alpha-36920221118002",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "flyio": "^0.6.2",
     "husky": "^8.0.2",
-    "i": "^0.3.7",
-    "lint-staged": "^13.0.3",
     "postcss-px-to-viewport": "^1.1.1",
-    "prettier": "^2.7.1",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
     "vuex": "^3.2.0"
@@ -104,12 +98,17 @@
     "@vue/cli-service": "~4.5.13",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
     "jest": "^25.4.0",
+    "lint-staged": "^13.0.3",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
-    "vue-template-compiler": "^2.6.11",
-    "husky": "^8.0.0"
+    "prettier": "^2.7.1",
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "Android >= 4.4",
@@ -119,7 +118,7 @@
     "@babel/runtime": "~7.17.9"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,ts,tsx}": "pnpm run lint-staged:js",
     "**/*.{js,jsx,tsx,ts,less,md,json}": [
       "prettier --write"
     ]
