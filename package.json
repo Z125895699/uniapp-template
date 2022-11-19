@@ -75,6 +75,7 @@
     "@dcloudio/uni-stat": "^2.0.1-alpha-36920221118002",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
+    "cz-conventional-changelog": "^3.3.0",
     "flyio": "^0.6.2",
     "husky": "^8.0.2",
     "postcss-px-to-viewport": "^1.1.1",
